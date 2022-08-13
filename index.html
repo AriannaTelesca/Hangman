@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hangman</title>
+  </head>
+
+  <body>
+  <h1>Hangman</h1>  
+
+  <div id="info">
+  </div>
+
+  <div style="padding: 20px;">
+    <a id="play" href="index.html" onClick="refreshPage()">New game</a>
+    </div>
+
+    <table>
+        <tr>
+        <td><button type="button" id="A">A</button></td>
+        <td><button type="button" id="B">B</button></td>
+        <td><button type="button" id="C">C</button></td>
+        <td><button type="button" id="D">D</button></td>
+        <td><button type="button" id="E">E</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" id="F">F</button></td>
+        <td><button type="button" id="G">G</button></td>
+        <td><button type="button" id="H">H</button></td>
+        <td><button type="button" id="I">I</button></td>
+        <td><button type="button" id="J">J</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" id="K">K</button></td>
+        <td><button type="button" id="L">L</button></td>
+        <td><button type="button" id="M">M</button></td>
+        <td><button type="button" id="N">N</button></td>
+        <td><button type="button" id="O">O</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" id="P">P</button></td>
+        <td><button type="button" id="Q">Q</button></td>
+        <td><button type="button" id="R">R</button></td>
+        <td><button type="button" id="S">S</button></td>
+        <td><button type="button" id="T">T</button></td>
+      </tr>
+      <tr>
+        <td><button type="button" id="U">U</button></td>
+        <td><button type="button" id="V">V</button></td>
+        <td><button type="button" id="W">W</button></td>
+        <td><button type="button" id="X">X</button></td>
+        <td><button type="button" id="Y">Y</button></td>
+      </tr>
+      <tr>
+          <td><button type="button" id="Z">Z</button></td>
+      </tr>
+    </table>
+
+    <div class="insert">
+      <p id="dash"></p>
+    </div>
+    <div class="livesContainer">
+      <h2>Lives: </h2>
+      <p id="lives"></p>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

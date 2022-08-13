@@ -1,0 +1,58 @@
+body {
+background-image: url(images/kelly-sikkema-4JxV3Gs42Ks-unsplash.jpg);
+margin: 5%;
+padding: 10px;    
+font-family:'Open Sans', sans-serif;
+}   
+
+h1 {
+    padding-bottom: 20px;
+ } 
+
+
+table {
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+    
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    font-size: large;
+    
+}
+
+#dash {
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.livesContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+}
+
+#lives {
+  display: inline;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+#info {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+#play {
+    margin-top: 10px;
+    display: none;
+    font-size: x-large;
+    color: green;
+}
