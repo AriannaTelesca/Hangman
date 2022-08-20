@@ -22,12 +22,18 @@ var input = "";
 var lives = 5;
 livesCounter.innerHTML = lives;
 
+if(lives == 5){
+  document.body.style.backgroundImage = "url('./images/kelly-sikkema-4JxV3Gs42Ks-unsplash.jpg')"; 
+}
 
 while(wordFinder.join("") !== word.toUpperCase() && lives>0){
 
   for (let x in buttonLettre){
  
     buttonLettre[x].addEventListener("click", ()=>{
+
+
+
 
       buttonLettre[x].style.background = "grey";
       input = buttonLettre[x].innerHTML;
@@ -50,6 +56,19 @@ while(wordFinder.join("") !== word.toUpperCase() && lives>0){
         }
       } else {
         lives = (lives-1);
+        
+        if(lives == 4){
+          document.body.style.backgroundImage = "url('./images/drawisland5.png')"; 
+        }
+        else if(lives == 3){
+          document.body.style.backgroundImage = "url('./images/drawisland4.png')"; 
+        }
+        else if(lives == 2){
+          document.body.style.backgroundImage = "url('./images/drawisland3.png')"; 
+        }
+        else if(lives == 1){
+          document.body.style.backgroundImage = "url('./images/drawisland2.png')"; 
+        }
       }
         
       if(wordFinder.join("") === word.toUpperCase()) {
@@ -65,7 +84,9 @@ while(wordFinder.join("") !== word.toUpperCase() && lives>0){
         for(let x in buttonLettre){
           buttonLettre[x].disabled = true;
         }
-
+        if(lives == 0){
+          document.body.style.backgroundImage = "url('./images/drawisland.png')"; 
+        }
         play.style.display = "initial";
         info.innerHTML = "You've lost. The word was '"+word+"'!";
       }
@@ -77,6 +98,8 @@ while(wordFinder.join("") !== word.toUpperCase() && lives>0){
   }
 
 }
+
+
 
 function refreshPage(){
   window.location.reload();
